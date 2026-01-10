@@ -189,9 +189,18 @@ export const HeroSection = () => {
                 initial="hidden"
                 animate="visible"
                 variants={textReveal}
+                className="font-display text-5xl sm:text-6xl md:text-7xl lg:text-8xl leading-[0.9] tracking-wider"
+              >
+                DE TOCAR
+              </motion.h1>
+              <motion.h1
+                custom={4}
+                initial="hidden"
+                animate="visible"
+                variants={textReveal}
                 className="font-display text-5xl sm:text-6xl md:text-7xl lg:text-8xl leading-[0.9] tracking-wider text-primary"
               >
-                DO CAJÓN
+                CAJÓN
               </motion.h1>
             </div>
 
