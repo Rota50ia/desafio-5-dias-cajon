@@ -1,13 +1,28 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
-import { Input } from "@/components/ui/input";
-import { Button } from "@/components/ui/button";
 
 export const CTASection = () => {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
+  const formContainerRef = useRef<HTMLDivElement>(null);
   const [counter, setCounter] = useState(97);
   const [timer, setTimer] = useState({ hours: 47, minutes: 32, seconds: 15 });
+
+  useEffect(() => {
+    // Load the external form script
+    const script = document.createElement("script");
+    script.src = "//web.webformscr.com/apps/fc3/build/loader.js";
+    script.async = true;
+    script.setAttribute("sp-form-id", "c77e07171229a43d1d0cedd71c5931641bde0bde99b0e14e42b8cea133272ee4");
+    
+    if (formContainerRef.current) {
+      formContainerRef.current.appendChild(script);
+    }
+
+    return () => {
+      if (formContainerRef.current && script.parentNode) {
+        script.parentNode.removeChild(script);
+      }
+    };
+  }, []);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -44,11 +59,6 @@ export const CTASection = () => {
 
   const formatTime = (num: number) => String(num).padStart(2, "0");
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    console.log({ name, email });
-  };
-
   return (
     <section className="py-24 px-5 gradient-cta text-center">
       <div className="container">
@@ -79,32 +89,8 @@ export const CTASection = () => {
             </p>
           </div>
 
-          <form onSubmit={handleSubmit} className="space-y-5">
-            <Input
-              type="text"
-              value={name}
-              onChange={(e) => setName(e.target.value)}
-              placeholder="Seu nome"
-              className="w-full px-5 py-4 bg-gray-100 border-2 border-gray-100 rounded-xl text-base text-navy-deep placeholder:text-gray-500 focus:border-secondary focus:bg-white transition-all"
-              required
-            />
-            <Input
-              type="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              placeholder="Seu melhor e-mail"
-              className="w-full px-5 py-4 bg-gray-100 border-2 border-gray-100 rounded-xl text-base text-navy-deep placeholder:text-gray-500 focus:border-secondary focus:bg-white transition-all"
-              required
-            />
-            <Button
-              type="submit"
-              variant="cta"
-              size="xl"
-              className="w-full py-6 rounded-xl"
-            >
-              GARANTIR MINHA VAGA GRÁTIS
-            </Button>
-          </form>
+          {/* External form container */}
+          <div ref={formContainerRef} className="min-h-[200px]" />
         </motion.div>
       </div>
     </section>
