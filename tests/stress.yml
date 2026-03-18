@@ -1,0 +1,31 @@
+config:
+  target: "http://localhost:52292"
+  phases:
+    - duration: 30
+      arrivalRate: 10
+      rampTo: 100
+      name: "Aquecimento"
+    - duration: 60
+      arrivalRate: 500
+      name: "Carga Normal"
+    - duration: 60
+      arrivalRate: 2000
+      name: "Pico"
+    - duration: 60
+      arrivalRate: 5000
+      name: "Saturacao"
+    - duration: 30
+      arrivalRate: 5000
+      rampTo: 100
+      name: "Resfriamento"
+  http:
+    timeout: 10
+    pool: 100
+
+scenarios:
+  - name: "Acesso à página"
+    flow:
+      - get:
+          url: "/"
+          expect:
+            - statusCode: 200
