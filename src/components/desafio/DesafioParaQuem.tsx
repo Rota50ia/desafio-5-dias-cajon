@@ -1,17 +1,17 @@
 import { motion } from "framer-motion";
 
 const SIM = [
-  "Você toca cajón em casa mas trava quando tem gente olhando",
-  "Você já recusou convite para tocar por vergonha",
-  "Você quer parar de ficar só \"esperando a hora certa\" para tocar em público",
-  "Você quer tocar em festas, reuniões e encontros com confiança",
-  "Você quer sentir prazer ao tocar — não ansiedade",
+  "Você toca cajón em casa, mas congela quando tem alguém olhando",
+  "Você já recusou convite para tocar — por vergonha, não por falta de técnica",
+  "Você ficou parado numa roda enquanto todo mundo entrava na música",
+  "Você quer tocar em festas e encontros sem aquele nó no estômago antes de começar",
+  "Você quer sentir prazer ao tocar — não aquela ansiedade que aparece quando alguém presta atenção",
 ];
 
 const NAO = [
   "Você nunca tocou cajón na vida (para isso existe o Curso Rápido de Cajón)",
-  "Você já toca em público sem nenhum bloqueio",
-  "Você quer aulas técnicas de ritmos avançados",
+  "Você já toca em público e não sente nenhum bloqueio",
+  "Você quer aulas técnicas de ritmos avançados ou teoria musical",
 ];
 
 const DesafioParaQuem = () => (
@@ -25,8 +25,11 @@ const DesafioParaQuem = () => (
         className="text-center mb-12"
       >
         <h2 className="font-heading text-3xl sm:text-4xl font-bold text-foreground">
-          Esse Desafio é Para Você?
+          Esse Desafio é Pra Você?
         </h2>
+        <p className="text-muted-foreground mt-3 max-w-lg mx-auto">
+          Leia com atenção. Não adianta entrar se não for o momento certo.
+        </p>
       </motion.div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">

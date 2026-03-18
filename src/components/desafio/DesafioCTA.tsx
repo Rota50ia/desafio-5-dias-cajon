@@ -12,33 +12,40 @@ const DesafioCTA = () => (
         transition={{ duration: 0.5 }}
       >
         <span className="badge-pill text-primary text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full inline-block mb-6">
-          Última chance
+          Comece Hoje
         </span>
 
         <h2 className="font-heading text-3xl sm:text-4xl font-bold text-foreground mb-4 leading-tight">
-          Em 5 Dias Você Vai Tocar{" "}
-          <span className="text-primary">Com Confiança</span>
-          {" "}— ou Devolvemos Seu Dinheiro
+          Cada Dia Que Você Adia,{" "}
+          <span className="text-primary">É Mais Uma Roda que Você Assiste de Fora.</span>
         </h2>
 
         <p className="text-muted-foreground text-lg mb-8 max-w-md mx-auto">
-          Garantia de 7 dias. Se você completar os 5 dias e não sentir diferença, devolvemos 100% do valor. Sem perguntas.
+          O desafio é gratuito, começa assim que você se inscrever, e dura 5 dias.
+          Em 5 dias você já vai sentir a diferença — ou não perde nada por ter tentado.
         </p>
 
         <div className="bg-card card-glow rounded-2xl p-8 mb-8 border border-border">
-          <p className="text-sm text-muted-foreground uppercase tracking-widest mb-2">Desafio 5 Dias</p>
+          <p className="text-sm text-muted-foreground uppercase tracking-widest mb-2">
+            Desafio 5 Dias — 100% Gratuito
+          </p>
           <p className="font-heading text-5xl font-bold text-foreground mb-1 stat-number">
             Acesso <span className="text-primary">Imediato</span>
           </p>
-          <p className="text-muted-foreground text-sm mb-6">Comece hoje, termine em 5 dias.</p>
+          <p className="text-muted-foreground text-sm mb-6">
+            Inscreva-se agora. Comece hoje. Termine em 5 dias.
+          </p>
           <a
             href={CHECKOUT_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block w-full bg-primary text-primary-foreground font-heading font-bold text-lg px-10 py-5 rounded-lg shadow-cta hover:bg-primary-dark hover:-translate-y-0.5 hover:shadow-cta-hover transition-all uppercase animate-pulse-glow"
           >
-            QUERO PERDER A VERGONHA AGORA
+            QUERO TOCAR LIVRE — ENTRAR NO DESAFIO AGORA
           </a>
+          <p className="text-xs text-muted-foreground/50 mt-3">
+            100% gratuito · Sem cartão de crédito · Acesso imediato
+          </p>
         </div>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 text-sm text-muted-foreground">
@@ -46,10 +53,10 @@ const DesafioCTA = () => (
             <span className="text-accent">&#10003;</span> Acesso Imediato
           </span>
           <span className="flex items-center gap-2">
-            <span className="text-accent">&#10003;</span> Garantia 7 Dias
+            <span className="text-accent">&#10003;</span> 100% Gratuito
           </span>
           <span className="flex items-center gap-2">
-            <span className="text-accent">&#10003;</span> Pagamento Seguro
+            <span className="text-accent">&#10003;</span> Grupo VIP Incluso
           </span>
         </div>
       </motion.div>

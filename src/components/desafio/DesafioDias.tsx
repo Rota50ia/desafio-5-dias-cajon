@@ -3,37 +3,37 @@ import { motion } from "framer-motion";
 const dias = [
   {
     num: "01",
-    emoji: "🎯",
-    titulo: "Identifique Sua Trava",
-    desc: "Entenda de onde vem o bloqueio. A vergonha de tocar tem um gatilho específico — e quando você o identifica, ele perde o poder sobre você.",
+    emoji: "🔍",
+    titulo: "Mapeie Sua Trava",
+    desc: "Antes de resolver, você precisa nomear. Neste dia você vai identificar o gatilho exato do seu bloqueio — porque uma trava que você conhece já não tem mais o mesmo poder sobre você.",
     cor: "border-primary/30 bg-primary/5",
   },
   {
     num: "02",
     emoji: "🥁",
-    titulo: "Toque Sem Julgamento",
-    desc: "Exercício prático de confiança individual. Você vai tocar errado de propósito — e descobrir que o mundo não acaba quando isso acontece.",
+    titulo: "Toque Errado de Propósito",
+    desc: "O medo de errar paralisa mais do que qualquer falta de técnica. Hoje você vai errar intencionalmente — e descobrir que o mundo não acaba. Esse exercício quebra o ciclo.",
     cor: "border-accent/30 bg-accent/5",
   },
   {
     num: "03",
     emoji: "👥",
-    titulo: "Quebre o Gelo",
-    desc: "Hora de tocar com alguém ao lado pela primeira vez. Uma pessoa de confiança. Um passo pequeno que muda tudo.",
+    titulo: "Sua Primeira Plateia",
+    desc: "Toque com uma pessoa de confiança ao lado. Só uma. Sem pressão, sem julgamento. O primeiro passo para sair do quarto e entrar na roda começa aqui.",
     cor: "border-primary/30 bg-primary/5",
   },
   {
     num: "04",
     emoji: "💪",
-    titulo: "Erro em Público",
-    desc: "Aprenda a lidar com o erro na frente dos outros. Quem não tem medo de errar, toca livre. Este exercício vai mudar sua relação com o cajón para sempre.",
+    titulo: "O Teste Real",
+    desc: "Hora de errar na frente de alguém — de propósito, com intenção. Quem aprende a continuar tocando depois de errar em público nunca mais para por causa de medo.",
     cor: "border-accent/30 bg-accent/5",
   },
   {
     num: "05",
     emoji: "🎉",
-    titulo: "Apresentação Final",
-    desc: "Toque para alguém. Pode ser um familiar, um amigo, qualquer pessoa. Você vai se surpreender com o quanto evoluiu em apenas 5 dias.",
+    titulo: "Você Está Pronto",
+    desc: "Toque para alguém hoje. Um familiar, um amigo — tanto faz. O que importa é que você chegou aqui. E o que vem depois disso depende só de você ir mais longe.",
     cor: "border-primary/40 bg-primary/8 ring-1 ring-primary/20",
   },
 ];
@@ -52,10 +52,10 @@ const DesafioDias = () => (
           O Programa
         </span>
         <h2 className="font-heading text-3xl sm:text-4xl font-bold text-foreground">
-          Os 5 Dias do Desafio
+          O Que Acontece em Cada Dia
         </h2>
         <p className="text-muted-foreground mt-3 max-w-xl mx-auto">
-          Cada dia tem uma aula em vídeo + exercício prático. 20 minutos por dia é o suficiente.
+          Uma aula em vídeo + um exercício prático por dia. 20 minutos são suficientes — sem teoria, sem enrolação.
         </p>
       </motion.div>
 

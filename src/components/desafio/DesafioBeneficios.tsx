@@ -4,22 +4,22 @@ const beneficios = [
   {
     emoji: "🎬",
     titulo: "5 Aulas em Vídeo",
-    desc: "Uma aula por dia. Diretas, sem enrolação. Cada uma com um exercício prático para aplicar no mesmo dia.",
+    desc: "Uma aula por dia, direto ao ponto. Cada vídeo tem no máximo 15 minutos — mais tempo do que isso não é necessário.",
   },
   {
-    emoji: "📋",
-    titulo: "Exercícios Diários",
-    desc: "20 minutos por dia são suficientes. Cada exercício foi desenhado para desafiar o bloqueio de vergonha progressivamente.",
+    emoji: "🎯",
+    titulo: "Exercício Prático Diário",
+    desc: "Cada dia tem um exercício desenhado para empurrar o bloqueio um passo para frente. 20 minutos de prática valem mais do que horas de teoria.",
   },
   {
     emoji: "💬",
     titulo: "Grupo VIP no WhatsApp",
-    desc: "Acesso ao grupo exclusivo de alunos do desafio. Você não vai fazer isso sozinho.",
+    desc: "Você não vai fazer isso sozinho. O grupo é o lugar onde outros alunos mostram progresso — e onde o professor responde dúvidas.",
   },
   {
-    emoji: "🏆",
-    titulo: "Metodologia Testada",
-    desc: "O mesmo método que transformou 217 alunos. Adaptado para resolver especificamente o bloqueio de tocar em público.",
+    emoji: "🔓",
+    titulo: "Acesso Imediato",
+    desc: "Assim que você se inscrever, recebe tudo. Sem esperar. Você pode começar hoje, agora, antes de fechar essa página.",
   },
 ];
 
@@ -37,7 +37,7 @@ const DesafioBeneficios = () => (
           Incluso no Desafio
         </span>
         <h2 className="font-heading text-3xl sm:text-4xl font-bold text-foreground">
-          O Que Você Recebe
+          Tudo Que Você Recebe — Gratuitamente
         </h2>
       </motion.div>
 
