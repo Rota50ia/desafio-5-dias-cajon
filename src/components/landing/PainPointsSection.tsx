@@ -3,10 +3,11 @@ import { useInView } from "framer-motion";
 import { useRef } from "react";
 
 const painPoints = [
-  "Alguém pede para você tocar e você inventa uma desculpa",
-  "Você vê um cajón na sala e pensa 'quem me dera...'",
-  "Tenta aprender sozinho e desiste na primeira dificuldade",
-  "Sente que 'não tem dom' enquanto vê outros tocando naturalmente",
+  "Alguém pede pra você tocar e você inventa qualquer desculpa pra não ir",
+  "O cajón está encostado na parede há meses — ou anos — cheio de poeira",
+  "Você tentou aprender no YouTube, se perdeu nos vídeos e desistiu",
+  "Sente que 'não tem dom' enquanto vê outras pessoas tocando sem esforço",
+  "Pratica com medo de ser ouvido — mesmo quando está sozinho em casa",
 ];
 
 export const PainPointsSection = () => {
@@ -47,8 +48,8 @@ export const PainPointsSection = () => {
           transition={{ duration: 0.6, delay: 0.6 }}
           className="max-w-3xl mx-auto mt-16 gradient-truth text-white p-10 rounded-2xl text-center text-xl font-semibold leading-relaxed shadow-[0_10px_40px_rgba(0,188,212,0.3)]"
         >
-          <strong>A VERDADE:</strong> A vergonha não é sobre falta de talento. 
-          É sobre falta do método certo.
+          <strong>A VERDADE:</strong> Em 40 anos ensinando, eu nunca encontrei alguém que "não levava jeito".<br /><br />
+          Encontrei pessoas que nunca tiveram o método certo.
         </motion.div>
       </div>
     </section>

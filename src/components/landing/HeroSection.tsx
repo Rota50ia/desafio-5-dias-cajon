@@ -18,8 +18,8 @@ export const HeroSection = () => {
   };
 
   const floatingStats = [
-    { icon: Users, value: "500+", label: "Alunos Liberados" },
-    { icon: Clock, value: "5", label: "Dias de Desafio" },
+    { icon: Users, value: "500+", label: "Pessoas Desbloqueadas" },
+    { icon: Clock, value: "10 min", label: "Por Dia" },
     { icon: Flame, value: "100%", label: "Gratuito" },
   ];
 
@@ -138,7 +138,7 @@ export const HeroSection = () => {
                   transition={{ duration: 2, repeat: Infinity, repeatDelay: 3 }}
                 />
                 <Flame className="w-4 h-4 text-primary-foreground" />
-                <span className="text-primary-foreground relative z-10">100 Vagas Gratuitas</span>
+                <span className="text-primary-foreground relative z-10">Desafio Gratuito — Sem cartão, sem taxa</span>
               </motion.span>
             </motion.div>
 
@@ -211,9 +211,9 @@ export const HeroSection = () => {
               transition={{ delay: 1, duration: 0.6 }}
               className="font-serif text-lg md:text-xl lg:text-2xl text-foreground/70 italic leading-relaxed max-w-xl"
             >
-              Descubra o método simples que já libertou{" "}
+              O método que já desbloqueou{" "}
               <span className="text-primary font-semibold not-italic">500+ pessoas</span>{" "}
-              do medo de tocar. Última chance antes que vire pago.
+              que achavam que "não levavam jeito". Sem partitura. Sem teoria. Só você e o ritmo.
             </motion.p>
 
             {/* Floating stats */}

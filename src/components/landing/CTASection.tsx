@@ -63,10 +63,10 @@ export const CTASection = () => {
     <section className="py-24 px-5 gradient-cta text-center">
       <div className="container">
         <h2 className="font-display text-4xl md:text-5xl lg:text-6xl mb-4 tracking-wider text-white">
-          Última Chance de Participar Grátis
+          Cinco Dias Que Mudam Sua Relação com a Música
         </h2>
         <p className="font-serif text-xl text-white/90 mb-8 italic max-w-2xl mx-auto">
-          Em breve esse desafio será pago. Garanta sua vaga agora!
+          Você já esperou tempo demais. O cajón está esperando por você.
         </p>
 
         <motion.div

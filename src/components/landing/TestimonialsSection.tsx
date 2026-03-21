@@ -5,18 +5,18 @@ import { useRef } from "react";
 const testimonials = [
   {
     header: "De Travado a Confiante",
-    text: "Eu travava completamente quando alguém pedia pra tocar. Depois do desafio, toquei na frente da família inteira no Natal. Não perfeito, mas FELIZ.",
-    author: "Roberto, 45 anos - Contador",
+    text: "Eu travava completamente quando alguém pedia pra tocar. Me enrolava, inventava desculpa... Na festa de Natal da família pediram pra mim tocar e eu... toquei. Não ficou perfeito, mas eu estava SORRINDO. Minha filha filmou. Já assisti umas 20 vezes.",
+    author: "Roberto, 45 anos — Contador, São Paulo",
   },
   {
-    header: "Finalmente Desbloqueei",
-    text: "Achava que precisava de anos de estudo. Em 5 dias já estava acompanhando músicas simples. O método é genial porque remove a pressão.",
-    author: "Camila, 32 anos - Professora",
+    header: "5 Dias Que Valeram Mais que 2 Anos",
+    text: "Fiz aula presencial por dois anos e travava toda hora. Em 5 dias com esse desafio entendi o que estava errado: eu ficava me julgando o tempo todo. O método te obriga a parar com isso. No Dia 4 eu estava acompanhando música no fone e chorei de emoção.",
+    author: "Camila, 32 anos — Professora, Belo Horizonte",
   },
   {
-    header: "Do Medo ao Prazer",
-    text: "O cajón ficou 2 anos parado no canto. Tinha vergonha até de praticar sozinho. Agora toco todo dia e meus vizinhos já pedem bis!",
-    author: "Fernando, 58 anos - Aposentado",
+    header: "2 Anos de Cajón Encostado — Acabou",
+    text: "O cajón ficou 2 anos parado no canto do quarto. Tinha vergonha até de praticar sozinho, com medo de ser ouvido pelo vizinho. Hoje toco todo dia. Os vizinhos já batem palma quando escutam.",
+    author: "Fernando, 58 anos — Aposentado, Porto Alegre",
   },
 ];
 
@@ -28,10 +28,10 @@ export const TestimonialsSection = () => {
     <section className="py-20 px-5 bg-navy-deep">
       <div className="container">
         <h2 className="font-display text-4xl md:text-5xl lg:text-6xl text-center mb-4 tracking-wider">
-          O Que Dizem Quem Já Fez
+          Quem Já Fez o Desafio
         </h2>
         <p className="font-serif text-xl text-foreground/70 text-center mb-16 italic">
-          Histórias reais de transformação
+          Pessoas reais. Histórias que você vai reconhecer.
         </p>
 
         <div

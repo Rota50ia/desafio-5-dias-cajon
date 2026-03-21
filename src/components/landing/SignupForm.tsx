@@ -34,10 +34,10 @@ export const SignupForm = () => {
       <span className="absolute -top-8 -right-8 text-7xl opacity-10 rotate-12">🎵</span>
 
       <h2 className="font-display text-3xl text-navy-deep text-center mb-2">
-        Garanta Sua Vaga Grátis
+        Quero Começar o Desafio
       </h2>
       <p className="text-center text-gray-600 mb-6 text-sm">
-        Transforme sua relação com o cajón em apenas 5 dias
+        5 dias · 10 min/dia · 100% gratuito · Começa quando você quiser
       </p>
 
       {/* External form container */}

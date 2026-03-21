@@ -31,25 +31,32 @@ export const ProfessorSection = () => {
 
           <div className="space-y-6">
             <p className="text-lg text-foreground/70 leading-relaxed">
-              Meu nome é <strong className="text-foreground">Edilson Morais</strong>. Tenho{" "}
-              <strong className="text-foreground">40 anos de experiência</strong> com percussão. 
-              Já passei por conservatórios, orquestras, percorri mais de 20 países...
+              Meu nome é <strong className="text-foreground">Edilson Morais</strong>. São{" "}
+              <strong className="text-foreground">40 anos tocando percussão</strong> —
+              conservatórios, orquestras, mais de 20 países percorridos.
             </p>
 
-            <p className="text-xl font-semibold">
-              Mas sabe o que mais me realiza?
+            <p className="text-lg text-foreground/70 leading-relaxed">
+              Mas o momento que eu mais espero em cada curso não é o aluno avançado
+              tocando algo complexo.
             </p>
 
             <div className="bg-accent/10 p-6 rounded-xl border-l-4 border-accent">
               <p className="text-accent font-bold text-xl">
-                Ver aquele brilho no olho de quem achava que "não levava jeito" 
-                quando finalmente consegue tocar.
+                É o aluno que chegou na primeira aula dizendo "acho que não tenho jeito pra isso"...
+                tocando solo na frente de todo mundo no último dia.
               </p>
             </div>
 
+            <p className="text-lg text-foreground/70 leading-relaxed">
+              Esse brilho no olho — eu não troco por nada.
+            </p>
+
             <p className="text-lg text-foreground/70 italic leading-relaxed">
-              Criei este desafio gratuito porque sei que a vergonha é o maior 
-              obstáculo. Não a falta de talento. E quero provar isso para você.
+              Vi centenas de pessoas pararem de tocar por vergonha. Não por falta de talento.
+              E decidi fazer algo a respeito. Estes 5 dias são minha garantia pessoal:
+              se você seguir o método, você vai tocar. Não perfeitamente.
+              Mas vai tocar — e vai gostar do que ouviu.
             </p>
           </div>
         </motion.div>

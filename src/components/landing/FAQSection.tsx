@@ -49,6 +49,16 @@ const faqs = [
     answer:
       "Não! Zero teoria musical. Apenas prática guiada. Você vai aprender ouvindo e repetindo.",
   },
+  {
+    question: "Funciona mesmo se eu nunca toquei nada na vida?",
+    answer:
+      "Funciona ESPECIALMENTE para quem nunca tocou. O Desafio foi desenhado do absoluto zero. Sem assumir nenhum conhecimento prévio. Se você consegue bater palma no ritmo, você já tem o que precisa.",
+  },
+  {
+    question: "Como sei que não vou desistir no meio?",
+    answer:
+      "Porque cada dia foi construído para te dar uma vitória pequena e real. Não pedimos que você 'acredite no processo' — pedimos 10 minutos. E no final desses 10 minutos você vai ter feito algo concreto que vai querer repetir.",
+  },
 ];
 
 export const FAQSection = () => {
