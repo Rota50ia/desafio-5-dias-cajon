@@ -143,39 +143,30 @@ export const HeroSection = () => {
             </motion.div>
 
             {/* Main headline with 3D reveal */}
-            <div className="space-y-2">
+            <div className="space-y-3">
               <motion.h1
                 custom={0}
                 initial="hidden"
                 animate="visible"
                 variants={textReveal}
-                className="font-display text-5xl sm:text-6xl md:text-7xl lg:text-8xl leading-[0.9] tracking-wider"
+                className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-[1.05] tracking-wide"
               >
-                5 DIAS PARA
-              </motion.h1>
-              <motion.h1
-                custom={1}
-                initial="hidden"
-                animate="visible"
-                variants={textReveal}
-                className="font-display text-5xl sm:text-6xl md:text-7xl lg:text-8xl leading-[0.9] tracking-wider"
-              >
-                PERDER A
+                Você até Sabe Tocar.
               </motion.h1>
               <motion.div
-                custom={2}
+                custom={1}
                 initial="hidden"
                 animate="visible"
                 variants={textReveal}
                 className="relative inline-block"
               >
-                <h1 className="font-display text-5xl sm:text-6xl md:text-7xl lg:text-8xl leading-[0.9] tracking-wider text-transparent bg-clip-text"
+                <h1 className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-[1.05] tracking-wide text-transparent bg-clip-text"
                   style={{
                     backgroundImage: "linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--orange-dark)) 50%, hsl(var(--primary)) 100%)",
                     backgroundSize: "200% auto",
                   }}
                 >
-                  VERGONHA
+                  Mas Quando Alguém Olha,
                 </h1>
                 <motion.div
                   className="absolute -bottom-2 left-0 h-1 bg-gradient-to-r from-primary via-accent to-secondary rounded-full"
@@ -185,22 +176,13 @@ export const HeroSection = () => {
                 />
               </motion.div>
               <motion.h1
-                custom={3}
+                custom={2}
                 initial="hidden"
                 animate="visible"
                 variants={textReveal}
-                className="font-display text-5xl sm:text-6xl md:text-7xl lg:text-8xl leading-[0.9] tracking-wider"
+                className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-[1.05] tracking-wide"
               >
-                DE TOCAR
-              </motion.h1>
-              <motion.h1
-                custom={4}
-                initial="hidden"
-                animate="visible"
-                variants={textReveal}
-                className="font-display text-5xl sm:text-6xl md:text-7xl lg:text-8xl leading-[0.9] tracking-wider text-primary"
-              >
-                CAJÓN
+                Você Congela.
               </motion.h1>
             </div>
 

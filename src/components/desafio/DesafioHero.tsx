@@ -29,7 +29,7 @@ const DesafioHero = () => (
         variants={fadeUp}
         className="font-heading text-3xl sm:text-4xl lg:text-6xl font-bold leading-tight mb-6 max-w-4xl mx-auto text-foreground tracking-tight text-balance"
       >
-        Você Sabe Tocar.{" "}
+        Você até Sabe Tocar.{" "}
         <span className="text-primary">Mas Quando Alguém Olha, Você Congela.</span>
       </motion.h1>
 
