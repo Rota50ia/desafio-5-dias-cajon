@@ -1,37 +1,38 @@
 import { motion } from "framer-motion";
+import { Drum, Eye, Search, Users, Zap } from "lucide-react";
 
 const dias = [
   {
     num: "01",
-    emoji: "🔍",
+    Icon: Search,
     titulo: "Mapeie Sua Trava",
     desc: "Antes de resolver, você precisa nomear. Neste dia você vai identificar o gatilho exato do seu bloqueio — porque uma trava que você conhece já não tem mais o mesmo poder sobre você.",
     cor: "border-primary/30 bg-primary/5",
   },
   {
     num: "02",
-    emoji: "🥁",
+    Icon: Drum,
     titulo: "Toque Errado de Propósito",
     desc: "O medo de errar paralisa mais do que qualquer falta de técnica. Hoje você vai errar intencionalmente — e descobrir que o mundo não acaba. Esse exercício quebra o ciclo.",
     cor: "border-accent/30 bg-accent/5",
   },
   {
     num: "03",
-    emoji: "👥",
+    Icon: Users,
     titulo: "Sua Primeira Plateia",
     desc: "Toque com uma pessoa de confiança ao lado. Só uma. Sem pressão, sem julgamento. O primeiro passo para sair do quarto e entrar na roda começa aqui.",
     cor: "border-primary/30 bg-primary/5",
   },
   {
     num: "04",
-    emoji: "💪",
+    Icon: Zap,
     titulo: "O Teste Real",
     desc: "Hora de errar na frente de alguém — de propósito, com intenção. Quem aprende a continuar tocando depois de errar em público nunca mais para por causa de medo.",
     cor: "border-accent/30 bg-accent/5",
   },
   {
     num: "05",
-    emoji: "🎉",
+    Icon: Eye,
     titulo: "Você Está Pronto",
     desc: "Toque para alguém hoje. Um familiar, um amigo — tanto faz. O que importa é que você chegou aqui. E o que vem depois disso depende só de você ir mais longe.",
     cor: "border-primary/40 bg-primary/8 ring-1 ring-primary/20",
@@ -48,7 +49,7 @@ const DesafioDias = () => (
         transition={{ duration: 0.5 }}
         className="text-center mb-12"
       >
-        <span className="badge-pill text-primary text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full inline-block mb-4">
+        <span className="badge-pill text-primary text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded inline-block mb-4">
           O Programa
         </span>
         <h2 className="font-heading text-3xl sm:text-4xl font-bold text-foreground">
@@ -67,10 +68,10 @@ const DesafioDias = () => (
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: i * 0.1 }}
-            className={`card-glow rounded-2xl p-6 border ${dia.cor} flex gap-5 items-start`}
+            className={`card-glow rounded p-6 border ${dia.cor} flex gap-5 items-start`}
           >
-            <div className="shrink-0 w-14 h-14 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center">
-              <span className="text-2xl">{dia.emoji}</span>
+            <div className="shrink-0 w-14 h-14 rounded bg-primary/10 border border-primary/20 flex items-center justify-center">
+              <dia.Icon className="h-6 w-6 text-primary" aria-hidden="true" />
             </div>
             <div>
               <div className="flex items-center gap-3 mb-1">

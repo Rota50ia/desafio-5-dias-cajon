@@ -1,5 +1,6 @@
 import HeaderNav from "@/components/HeaderNav";
 import DesafioHero from "@/components/desafio/DesafioHero";
+import DesafioSeoSection from "@/components/desafio/DesafioSeoSection";
 import DesafioParaQuem from "@/components/desafio/DesafioParaQuem";
 import DesafioDias from "@/components/desafio/DesafioDias";
 import DesafioBeneficios from "@/components/desafio/DesafioBeneficios";
@@ -13,6 +14,7 @@ const Desafio = () => (
   <main>
     <HeaderNav />
     <DesafioHero />
+    <DesafioSeoSection />
     <DesafioParaQuem />
     <DesafioDias />
     <DesafioBeneficios />

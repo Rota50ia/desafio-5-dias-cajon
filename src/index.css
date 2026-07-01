@@ -4,43 +4,43 @@
 
 @layer base {
   :root {
-    --background: 0 0% 3%;
-    --foreground: 0 0% 97%;
-    --card: 0 0% 6%;
-    --card-foreground: 0 0% 97%;
-    --popover: 0 0% 6%;
-    --popover-foreground: 0 0% 97%;
-    --primary: 24 100% 52%;
+    --background: 0 0% 0%;
+    --foreground: 0 0% 96%;
+    --card: 216 40% 4%;
+    --card-foreground: 0 0% 96%;
+    --popover: 216 40% 4%;
+    --popover-foreground: 0 0% 96%;
+    --primary: 259 86% 65%;
     --primary-foreground: 0 0% 100%;
-    --primary-dark: 24 90% 38%;
-    --secondary: 0 0% 9%;
-    --secondary-foreground: 0 0% 68%;
-    --muted: 0 0% 10%;
-    --muted-foreground: 0 0% 48%;
-    --accent: 174 60% 41%;
-    --accent-foreground: 0 0% 100%;
-    --accent-light: 174 30% 8%;
+    --primary-dark: 259 75% 53%;
+    --secondary: 216 40% 4%;
+    --secondary-foreground: 220 9% 46%;
+    --muted: 216 40% 4%;
+    --muted-foreground: 220 9% 46%;
+    --accent: 79 100% 59%;
+    --accent-foreground: 216 40% 4%;
+    --accent-light: 259 55% 9%;
     --destructive: 0 70% 47%;
     --destructive-foreground: 0 0% 100%;
-    --border: 263 15% 16%;
-    --input: 263 15% 16%;
-    --ring: 24 100% 52%;
-    --radius: 0.75rem;
+    --border: 259 35% 16%;
+    --input: 259 35% 16%;
+    --ring: 259 86% 65%;
+    --radius: 0.25rem;
 
     /* Phase colors – dark tinted */
-    --fase-1: 263 30% 10%;
-    --fase-2: 174 25% 9%;
-    --fase-3: 45 25% 9%;
-    --fase-4: 210 30% 11%;
-    --fase-5: 320 25% 11%;
-    --fase-6: 0 25% 11%;
+    --fase-1: 216 40% 4%;
+    --fase-2: 259 46% 8%;
+    --fase-3: 216 40% 5%;
+    --fase-4: 259 38% 10%;
+    --fase-5: 216 40% 5%;
+    --fase-6: 259 42% 9%;
 
     /* CTA shadows */
-    --shadow-cta: 0 4px 20px hsl(263 70% 58% / 0.35);
-    --shadow-cta-hover: 0 8px 30px hsl(263 70% 58% / 0.55);
+    --shadow-cta: 0 0 28px hsl(79 100% 59% / 0.30), 0 22px 80px hsl(79 100% 59% / 0.18);
+    --shadow-cta-hover: 0 0 34px hsl(79 100% 59% / 0.46), 0 28px 90px hsl(79 100% 59% / 0.24);
 
     /* Sidebar defaults */
-    --sidebar-background: 0 0% 6%;
+    --sidebar-background: 216 40% 4%;
     --sidebar-foreground: 0 0% 97%;
     --sidebar-primary: 0 0% 97%;
     --sidebar-primary-foreground: 0 0% 6%;
@@ -57,41 +57,51 @@
   }
   body {
     @apply bg-background text-foreground;
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'Inter', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Sora', sans-serif;
+    font-family: 'Geist', 'Inter', sans-serif;
   }
 }
 
 @layer components {
   .card-glow {
-    border: 1px solid hsl(24 40% 20%);
-    box-shadow:
-      0 0 20px -5px hsl(24 100% 52% / 0.08),
-      0 0 40px -10px hsl(24 100% 52% / 0.04);
-    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid hsl(259 35% 16% / 0.85);
+    box-shadow: none;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
   }
   .card-glow:hover {
-    border-color: hsl(24 100% 52% / 0.40);
-    box-shadow:
-      0 0 25px -5px hsl(24 100% 52% / 0.18),
-      0 0 50px -10px hsl(24 100% 52% / 0.10);
+    border-color: hsl(259 86% 65% / 0.55);
+    background-color: hsl(216 40% 5%);
+  }
+  .cta-lime {
+    background: #c8ff2e;
+    color: #06090e;
+    box-shadow: var(--shadow-cta);
+  }
+  .cta-lime:hover {
+    background: hsl(79 100% 52%);
+    box-shadow: var(--shadow-cta-hover);
   }
 }
 
 @layer utilities {
   .text-gradient-hero {
     @apply bg-clip-text text-transparent;
-    background-image: linear-gradient(135deg, hsl(0 0% 100%) 0%, hsl(263 40% 80%) 100%);
+    background-image: linear-gradient(135deg, hsl(0 0% 98%) 0%, hsl(259 86% 78%) 100%);
   }
   .bg-hero-gradient {
-    background: linear-gradient(180deg, hsl(263 25% 5%) 0%, hsl(var(--background)) 100%);
+    background:
+      radial-gradient(circle at 78% 28%, hsl(0 0% 100% / 0.08) 0%, transparent 24%),
+      radial-gradient(circle at 18% 92%, hsl(259 86% 65% / 0.20) 0%, transparent 34%),
+      linear-gradient(180deg, hsl(216 40% 4%) 0%, hsl(0 0% 0%) 100%);
   }
   .bg-cta-gradient {
-    background: linear-gradient(180deg, hsl(263 20% 5%) 0%, hsl(0 0% 2%) 100%);
+    background:
+      radial-gradient(circle at 50% 100%, hsl(259 86% 65% / 0.22) 0%, transparent 42%),
+      linear-gradient(180deg, hsl(216 40% 4%) 0%, hsl(0 0% 0%) 100%);
   }
   .bg-escassez {
     background-color: hsl(0 0% 2%);
@@ -117,20 +127,20 @@
 /* Linha divisoria com gradiente */
 .divider-glow {
   height: 1px;
-  background: linear-gradient(90deg, transparent, hsl(263 70% 58% / 0.4), transparent);
+  background: linear-gradient(90deg, transparent, hsl(259 86% 65% / 0.45), transparent);
 }
 
 /* Badge pill moderno */
 .badge-pill {
-  background: hsl(24 100% 52% / 0.12);
-  border: 1px solid hsl(24 100% 52% / 0.25);
-  backdrop-filter: blur(8px);
+  background: hsl(259 86% 65% / 0.12);
+  border: 1px solid hsl(259 86% 65% / 0.35);
+  backdrop-filter: blur(10px);
 }
 
 /* Numero destaque estilo contador */
 .stat-number {
   font-variant-numeric: tabular-nums;
-  letter-spacing: -0.04em;
+  letter-spacing: 0;
 }
 
 /* Glow sutil no hero */
@@ -138,7 +148,7 @@
   position: absolute;
   width: 600px;
   height: 600px;
-  background: radial-gradient(circle, hsl(24 100% 52% / 0.08) 0%, transparent 70%);
+  background: radial-gradient(circle, hsl(259 86% 65% / 0.16) 0%, transparent 70%);
   pointer-events: none;
   filter: blur(40px);
 }

@@ -11,7 +11,7 @@ const DesafioCTA = () => (
         viewport={{ once: true }}
         transition={{ duration: 0.5 }}
       >
-        <span className="badge-pill text-primary text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full inline-block mb-6">
+        <span className="badge-pill text-primary text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded inline-block mb-6">
           Comece Hoje
         </span>
 
@@ -25,7 +25,7 @@ const DesafioCTA = () => (
           Em 5 dias você já vai sentir a diferença — ou não perde nada por ter tentado.
         </p>
 
-        <div className="bg-card card-glow rounded-2xl p-8 mb-8 border border-border">
+        <div className="bg-card card-glow rounded p-8 mb-8 border border-border">
           <p className="text-sm text-muted-foreground uppercase tracking-widest mb-2">
             Desafio 5 Dias — 100% Gratuito
           </p>
@@ -39,7 +39,7 @@ const DesafioCTA = () => (
             href={CHECKOUT_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block w-full bg-primary text-primary-foreground font-heading font-bold text-lg px-10 py-5 rounded-lg shadow-cta hover:bg-primary-dark hover:-translate-y-0.5 hover:shadow-cta-hover transition-all uppercase animate-pulse-glow"
+            className="inline-block w-full cta-lime font-heading font-bold text-base sm:text-lg px-8 sm:px-10 py-5 rounded hover:-translate-y-0.5 transition-all uppercase tracking-[0.08em]"
           >
             QUERO TOCAR LIVRE — ENTRAR NO DESAFIO AGORA
           </a>

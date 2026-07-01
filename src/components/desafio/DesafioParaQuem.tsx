@@ -39,10 +39,10 @@ const DesafioParaQuem = () => (
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="border border-primary/30 bg-primary/5 rounded-2xl p-8 card-glow"
+          className="border border-primary/30 bg-primary/5 rounded p-8 card-glow"
         >
           <h3 className="font-heading text-lg font-bold text-primary mb-5 flex items-center gap-2">
-            <span>✅</span> SIM, é para você se...
+            <span className="text-accent">&#10003;</span> SIM, é para você se...
           </h3>
           <ul className="space-y-3">
             {SIM.map((item, i) => (
@@ -60,10 +60,10 @@ const DesafioParaQuem = () => (
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.1 }}
-          className="border border-red-500/25 bg-red-950/20 rounded-2xl p-8"
+          className="border border-red-500/25 bg-red-950/20 rounded p-8"
         >
           <h3 className="font-heading text-lg font-bold text-muted-foreground mb-5 flex items-center gap-2">
-            <span>❌</span> NÃO é para você se...
+            <span className="text-red-400">&#10005;</span> NÃO é para você se...
           </h3>
           <ul className="space-y-3">
             {NAO.map((item, i) => (

@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import tailwindcssAnimate from "tailwindcss-animate";
 
 export default {
   darkMode: ["class"],
@@ -14,8 +15,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        heading: ["Sora", "sans-serif"],
-        body: ["DM Sans", "sans-serif"],
+        heading: ["Geist", "Inter", "sans-serif"],
+        body: ["Inter", "sans-serif"],
       },
       colors: {
         border: "hsl(var(--border))",
@@ -87,8 +88,8 @@ export default {
           to: { height: "0" },
         },
         "pulse-glow": {
-          "0%, 100%": { boxShadow: "0 4px 20px hsl(24 100% 52% / 0.45)" },
-          "50%": { boxShadow: "0 4px 35px hsl(24 100% 52% / 0.70)" },
+          "0%, 100%": { boxShadow: "0 0 28px hsl(79 100% 59% / 0.30), 0 22px 80px hsl(79 100% 59% / 0.18)" },
+          "50%": { boxShadow: "0 0 34px hsl(79 100% 59% / 0.46), 0 28px 90px hsl(79 100% 59% / 0.24)" },
         },
       },
       animation: {
@@ -98,5 +99,5 @@ export default {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [tailwindcssAnimate],
 } satisfies Config;

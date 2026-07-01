@@ -22,13 +22,21 @@ const faqs = [
     q: "Onde recebo as aulas?",
     a: "Direto no seu acesso após a inscrição — e também no grupo VIP do WhatsApp, onde você vai junto com outros alunos que estão no mesmo ponto que você.",
   },
+  {
+    q: "O desafio ensina técnica de cajón?",
+    a: "Ele usa exercícios práticos no cajón, mas o foco principal é confiança, exposição gradual e continuidade depois do erro. Para aprender do zero, o ideal é começar pelo Curso Rápido de Cajón.",
+  },
+  {
+    q: "Serve para tocar na igreja, roda de amigos ou eventos?",
+    a: "Sim, desde que você já tenha alguma base no cajón. O desafio ajuda justamente quem sabe tocar em casa, mas sente pressão quando precisa tocar diante de outras pessoas.",
+  },
 ];
 
 const FAQItem = ({ q, a }: { q: string; a: string }) => {
   const [open, setOpen] = useState(false);
   return (
     <div
-      className="border border-border rounded-xl overflow-hidden cursor-pointer"
+      className="border border-border rounded overflow-hidden cursor-pointer"
       onClick={() => setOpen(!open)}
     >
       <div className="flex items-center justify-between px-5 py-4 bg-card hover:bg-card/80 transition-colors">
